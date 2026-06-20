@@ -64,3 +64,6 @@ body {
     scroll-behavior: auto;
   }
 }
+html {
+  font-size: 19px;
+}
