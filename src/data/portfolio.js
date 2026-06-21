@@ -4,7 +4,7 @@ export const profile = {
   name: 'Tanisha',
   role: 'ECE-AI Student · Frontend Developer',
   tagline:
-    "Final-stage B.Tech student building full-stack web apps and exploring applied GenAI — currently shipping React interfaces and experimenting with LLM-based research tooling.",
+    "Final-year B.Tech student focused on full-stack development, data structures & algorithms, and applied AI, with experience building modern web applications and LLM-driven projects.",
   email: 'tanisha01603@gmail.com',
   phone: '+91 88104 23357',
   github: 'https://github.com/',
