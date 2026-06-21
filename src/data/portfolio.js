@@ -8,7 +8,7 @@ export const profile = {
   email: 'tanisha01603@gmail.com',
   phone: '+91 88104 23357',
   github: 'https://github.com/TAnisha016',
-  linkedin: 'https://linkedin.com/',
+  linkedin: 'https://www.linkedin.com/in/tanisha-9908a4282/',
   resumeUrl: '/Tanisha_Resume.pdf',
   location: 'New Delhi, India',
 };
