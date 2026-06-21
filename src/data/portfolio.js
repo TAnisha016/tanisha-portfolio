@@ -7,7 +7,7 @@ export const profile = {
     "Final-year B.Tech student focused on full-stack development, data structures & algorithms, and applied AI, with experience building modern web applications and LLM-driven projects.",
   email: 'tanisha01603@gmail.com',
   phone: '+91 88104 23357',
-  github: 'https://github.com/',
+  github: 'https://github.com/TAnisha016',
   linkedin: 'https://linkedin.com/',
   resumeUrl: '/Tanisha_Resume.pdf',
   location: 'New Delhi, India',
