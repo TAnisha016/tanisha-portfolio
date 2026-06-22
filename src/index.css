@@ -10,15 +10,36 @@
 }
 
 html, body, #root {
-  background-color: #0A0A0B;
+  background-color: #0B0717;
   margin: 0;
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #0B0717;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+    radial-gradient(
+      ellipse 900px 600px at 8% 8%,
+      rgba(139,92,246,0.20),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 700px 500px at 95% 92%,
+      rgba(217,70,239,0.14),
+      transparent 60%
+    );
+
+  background-size:
+    80px 80px,
+    80px 80px,
+    auto,
+    auto;
+
+  background-attachment: fixed;
 }
+
 
 ::selection {
   background-color: rgba(99, 102, 241, 0.3);

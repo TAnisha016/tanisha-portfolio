@@ -7,6 +7,9 @@ export default function Hero() {
       id="hero"
       className="min-h-screen flex items-center pt-24 pb-16 px-6 relative"
     >
+      <div className="absolute top-20 left-0 w-96 h-96 bg-purple-600/20 blur-[120px] rounded-full pointer-events-none" />
+
+<div className="absolute bottom-0 right-0 w-96 h-96 bg-fuchsia-500/10 blur-[140px] rounded-full pointer-events-none" />
       <div className="max-w-content mx-auto w-full">
         <div className="animate-fadeUp">
           <div className="inline-flex items-center gap-2 font-mono text-xs text-accent bg-accent-dim border border-accent-border rounded-full px-3 py-1 mb-8">
@@ -35,6 +38,7 @@ export default function Hero() {
               <FileText size={16} />
               Resume
             </a>
+
             <a
               href={profile.github}
               target="_blank"
@@ -44,6 +48,7 @@ export default function Hero() {
               <Github size={16} />
               GitHub
             </a>
+
             <a
               href={profile.linkedin}
               target="_blank"
@@ -55,20 +60,73 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Signature element: a quiet terminal card grounding her as a builder, not a gimmick */}
-          <div className="max-w-md rounded-lg border border-bg-border bg-bg-surface overflow-hidden">
-            <div className="flex items-center gap-1.5 px-4 py-2.5 border-b border-bg-border">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#3a3a40]" />
-              <span className="w-2.5 h-2.5 rounded-full bg-[#3a3a40]" />
-              <span className="w-2.5 h-2.5 rounded-full bg-[#3a3a40]" />
-              <span className="font-mono text-[11px] text-ink-muted ml-2">whoami.sh</span>
+          <div className="max-w-md rounded-lg border border-bg-border bg-bg-surface backdrop-blur-sm overflow-hidden font-mono">
+            <div className="flex items-center justify-between px-4 py-2.5 border-b border-bg-border">
+              <div className="flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
+              </div>
+              <span className="text-[11px] text-ink-muted">about_me.js</span>
             </div>
-            <div className="px-4 py-3 font-mono text-[13px] leading-relaxed">
-              <p className="text-ink-muted">
-                <span className="text-accent">$</span> whoami
+
+            <div className="px-4 py-3 text-[12.5px] leading-relaxed">
+              <p>
+                <span className="text-[#C792EA]">const</span>{' '}
+                <span className="text-ink-primary">tanisha</span> = {'{'}
               </p>
-              <p className="text-ink-secondary">B.Tech ECE-AI student · IGDTUW, 2027</p>
-              <p className="text-ink-secondary">Building with React, Node.js, C++</p>
+
+              <p className="pl-4">
+                <span className="text-[#80CBC4]">role</span>:{' '}
+                <span className="text-[#C3E88D]">"ECE-AI Student"</span>,
+              </p>
+
+              <p className="pl-4">
+                <span className="text-[#80CBC4]">focus</span>: [
+                <span className="text-[#C3E88D]">"Full-Stack Dev"</span>,{' '}
+                <span className="text-[#C3E88D]">"DSA"</span>,{' '}
+                <span className="text-[#C3E88D]">"AI"</span>],
+              </p>
+
+              <p className="pl-4">
+                <span className="text-[#80CBC4]">college</span>:{' '}
+                <span className="text-[#C3E88D]">"IGDTUW"</span>,
+              </p>
+
+              <p className="pl-4">
+                <span className="text-[#80CBC4]">gradYear</span>:{' '}
+                <span className="text-[#F78C6C]">2027</span>,
+              </p>
+
+              <p className="pl-4">
+                <span className="text-[#80CBC4]">languages</span>: [
+                <span className="text-[#C3E88D]">"C++"</span>,{' '}
+                <span className="text-[#C3E88D]">"JavaScript"</span>],
+              </p>
+
+              <p className="pl-4">
+                <span className="text-[#80CBC4]">frameworks</span>: [
+                <span className="text-[#C3E88D]">"React"</span>,{' '}
+                <span className="text-[#C3E88D]">"Node.js"</span>],
+              </p>
+
+              <p>{'};'}</p>
+
+              <p className="mt-2">
+                <span className="text-[#82AAFF]">console</span>.
+                <span className="text-[#82AAFF]">log</span>(
+                <span className="text-[#C3E88D]">
+                  "Always learning, always building."
+                </span>
+                );
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2 px-4 py-2 border-t border-bg-border">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#27C93F] animate-pulse" />
+              <span className="text-[11px] text-ink-muted">
+                Currently building the future
+              </span>
             </div>
           </div>
         </div>
@@ -78,7 +136,9 @@ export default function Hero() {
         href="#about"
         onClick={(e) => {
           e.preventDefault();
-          document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+          document
+            .getElementById('about')
+            ?.scrollIntoView({ behavior: 'smooth' });
         }}
         className="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 text-ink-muted hover:text-ink-secondary transition-colors"
         aria-label="Scroll to About section"

@@ -4,25 +4,28 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: {
-          DEFAULT: '#0A0A0B',
-          surface: '#131316',
-          raised: '#19191D',
-          border: '#212126',
-          borderHover: '#2C2C32',
-        },
-        ink: {
-          primary: '#FAFAFA',
-          secondary: '#A1A1AA',
-          muted: '#71717A',
-        },
-        accent: {
-          DEFAULT: '#6366F1',
-          hover: '#7C7FF5',
-          dim: 'rgba(99, 102, 241, 0.12)',
-          border: 'rgba(99, 102, 241, 0.35)',
-        },
-      },
+  bg: {
+    DEFAULT: '#0B0717',
+    surface: 'rgba(255, 255, 255, 0.03)',
+    raised: 'rgba(255, 255, 255, 0.05)',
+    border: 'rgba(255, 255, 255, 0.08)',
+    borderHover: 'rgba(255, 255, 255, 0.16)',
+  },
+  ink: {
+    primary: '#FAFAFA',
+    secondary: '#A1A1AA',
+    muted: '#71717A',
+  },
+  accent: {
+    DEFAULT: '#8B5CF6',
+    hover: '#9D70F9',
+    dim: 'rgba(139, 92, 246, 0.12)',
+    border: 'rgba(139, 92, 246, 0.35)',
+  },
+  accent2: {
+    DEFAULT: '#D946EF',
+  },
+}, 
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
