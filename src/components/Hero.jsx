@@ -64,7 +64,7 @@ export default function Hero() {
 
           <div className="flex justify-center lg:justify-end">
 
-            <div className="w-full max-w-xl rounded-lg border border-bg-border bg-bg-surface backdrop-blur-sm overflow-hidden font-mono">
+            <div className="w-full max-w-xl rounded-lg border border-bg-border bg-bg-surface backdrop-blur-sm overflow-hidden font-mono shadow-[0_0_60px_rgba(139,92,246,0.15)]">
               <div className="flex items-center justify-between px-4 py-2.5 border-b border-bg-border">
                 <div className="flex items-center gap-1.5">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
