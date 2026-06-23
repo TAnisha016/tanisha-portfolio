@@ -23,7 +23,7 @@ export default function About() {
           </Reveal>
 
           <Reveal delay={160}>
-            <div className="rounded-lg border border-bg-border bg-bg-surface p-5 ">
+            <div className="rounded-lg border border-bg-border bg-bg-surface p-5 shadow-[0_0_60px_rgba(139,92,246,0.15)] ">
               <div className="flex items-center gap-2 text-ink-muted mb-3">
                 <GraduationCap size={16} />
                 <span className="font-mono text-xs uppercase tracking-wide">Education</span>
