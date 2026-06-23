@@ -6,7 +6,7 @@ export default function SectionHeading({ eyebrow, title, description }) {
         {title}
       </h2>
       {description && (
-        <p className="text-ink-secondary text-sm sm:text-base max-w-xl">{description}</p>
+        <p className="text-ink-secondary text-sm sm:text-base font-semibold max-w-xl ">{description}</p>
       )}
     </div>
   );

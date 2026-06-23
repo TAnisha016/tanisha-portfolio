@@ -15,7 +15,7 @@ export default function About() {
           <Reveal className="md:col-span-2" delay={80}>
             <div className="space-y-4">
               {about.paragraphs.map((p, i) => (
-                <p key={i} className="text-ink-secondary leading-relaxed text-[15px]">
+                <p key={i} className="text-ink-secondary leading-relaxed text-[16px]">
                   {p}
                 </p>
               ))}
