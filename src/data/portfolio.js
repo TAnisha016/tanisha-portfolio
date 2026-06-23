@@ -16,8 +16,10 @@ export const profile = {
 export const about = {
   heading: 'About',
   paragraphs: [
-    "I'm an Electronics & Communication Engineering (AI) student at Indira Gandhi Delhi Technical University for Women, building toward a career as a software engineer. Most of my time goes into frontend development — turning designs and ideas into interfaces that are fast, accessible, and easy to use.",
-    "Alongside coursework, I've been exploring Generative AI and LLM-based tooling through an internship on an agentic research framework, and I round things out with consistent DSA practice. I like projects with a real user at the end of them — a volunteer, a reader, a student — rather than ones built just to look good on a resume.",
+    "Hi, I'm Tanisha — an ECE-AI student, builder, and lifelong learner.", 
+    "I enjoy turning ideas into software, whether that's a news platform, a community-focused application, or an AI-powered tool. What excites me most about technology is its ability to solve real problems for real people, which is why I'm drawn to projects that have a clear purpose and impact.",
+    "My interests currently revolve around full-stack development, data structures & algorithms, and applied AI. Through personal projects, internships, and continuous learning, I'm building the skills needed to become a software engineer who can design, develop, and ship meaningful products.",
+    "I'm always curious about new technologies, new challenges, and new opportunities to grow. ",
   ],
 };
 
