@@ -23,14 +23,62 @@ export const about = {
   ],
 };
 
-export const skills = [
-  { name: 'C++', category: 'Language' },
-  { name: 'DSA', category: 'Foundation' },
-  { name: 'JavaScript', category: 'Language' },
-  { name: 'React', category: 'Frontend' },
-  { name: 'Bootstrap', category: 'Frontend' },
-  { name: 'Node.js', category: 'Backend' },
-  { name: 'Git / GitHub', category: 'Tooling' },
+export const skillGroups = [
+  {
+    title: "Programming",
+    description: "Core programming languages I use to solve problems and build software.",
+    color: "purple",
+    skills: ["C++", "JavaScript"]
+  },
+  {
+    title: "Frontend",
+    description: "Building responsive and interactive user interfaces.",
+    color: "blue",
+    skills: [
+      "React",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    title: "Backend",
+    description: "Developing APIs and server-side applications.",
+    color: "green",
+    skills: [
+      "Node.js",
+      "Express.js"
+    ]
+  },
+  {
+    title: "AI & Tools",
+    description: "Exploring modern AI technologies and developer tools.",
+    color: "amber",
+    skills: [
+      "LangChain",
+      "Google Gemini",
+      "Prompt Engineering"
+    ]
+  },
+  {
+    title: "Developer Tools",
+    description: "Tools I use throughout the development workflow.",
+    color: "pink",
+    skills: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Postman"
+    ]
+  }
+];
+
+export const learning = [
+  "Data Structures & Algorithms",
+  "System Design",
+  "Next.js",
+  "TypeScript"
 ];
 
 export const projects = [
