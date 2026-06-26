@@ -26,12 +26,14 @@ export const about = {
 export const skillGroups = [
   {
     title: "Programming",
+    icon: "code",
     description: "Core programming languages I use to solve problems and build software.",
     color: "purple",
     skills: ["C++", "JavaScript"]
   },
   {
     title: "Frontend",
+    icon: "monitor",
     description: "Building responsive and interactive user interfaces.",
     color: "blue",
     skills: [
@@ -44,6 +46,7 @@ export const skillGroups = [
   },
   {
     title: "Backend",
+    icon: "server",
     description: "Developing APIs and server-side applications.",
     color: "green",
     skills: [
@@ -53,6 +56,7 @@ export const skillGroups = [
   },
   {
     title: "AI & Tools",
+    icon: "brain",
     description: "Exploring modern AI technologies and developer tools.",
     color: "amber",
     skills: [
@@ -63,6 +67,7 @@ export const skillGroups = [
   },
   {
     title: "Developer Tools",
+    icon: "git",
     description: "Tools I use throughout the development workflow.",
     color: "pink",
     skills: [
