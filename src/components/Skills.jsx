@@ -37,11 +37,11 @@ export default function Skills() {
 
             return (
               <Reveal key={group.title} delay={index * 80}>
-                <div className="h-full rounded-2xl border border-bg-border bg-bg-surface hover:bg-bg-raised transition-all duration-300 p-6">
+                <div className="h-full rounded-2xl border border-bg-border bg-bg-surface hover:bg-bg-raised transition-all duration-300 p-4">
 
                   <div
                     className={`
-    w-14 h-14 rounded-xl flex items-center justify-center mb-6
+    w-12 h-12 rounded-xl flex items-center justify-center mb-6
     ${group.color === "purple"
                         ? "bg-purple-500/15 text-purple-400"
                         : group.color === "blue"
@@ -54,20 +54,20 @@ export default function Skills() {
                       }
   `}
                   >
-                    <Icon size={28} />
+                    <Icon size={24} />
                   </div>
 
-                  <h3 className="text-2xl font-bold text-ink-primary mb-2">
+                  <h3 className="text-xl font-bold text-ink-primary mb-2">
                     {group.title}
                   </h3>
 
-                  <p className="text-sm text-ink-secondary mb-6 leading-relaxed">
+                  <p className="text-sm text-ink-secondary mb-4 leading-relaxed">
                     {group.description}
                   </p>
 
                   <div className="border-t border-bg-border mb-5"></div>
 
-                  <ul className="space-y-3">
+                  <ul className="space-y-2">
                     {group.skills.map((skill) => (
                       <li
                         key={skill}
