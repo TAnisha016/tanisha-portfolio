@@ -37,7 +37,7 @@ export default function Skills() {
 
             return (
               <Reveal key={group.title} delay={index * 80}>
-                <div className="h-full rounded-2xl border border-bg-border bg-bg-surface hover:bg-bg-raised transition-all duration-300 p-4">
+                <div className="relative h-full rounded-2xl border border-bg-border bg-bg-surface hover:bg-bg-raised transition-all duration-300 p-5 overflow-hidden">
 
                   <div
                     className={`
@@ -78,6 +78,23 @@ export default function Skills() {
                       </li>
                     ))}
                   </ul>
+
+                  <div
+  className={`
+    absolute bottom-0 left-0 w-full h-[2px]
+    ${
+      group.color === "purple"
+        ? "bg-purple-500"
+        : group.color === "blue"
+        ? "bg-blue-500"
+        : group.color === "green"
+        ? "bg-green-500"
+        : group.color === "amber"
+        ? "bg-amber-500"
+        : "bg-pink-500"
+    }
+  `}
+/>
 
                 </div>
               </Reveal>
