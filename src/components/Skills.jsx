@@ -37,7 +37,7 @@ export default function Skills() {
 
             return (
               <Reveal key={group.title} delay={index * 80}>
-                <div className="relative h-full rounded-2xl border border-bg-border bg-bg-surface hover:bg-bg-raised transition-all duration-300 p-5 overflow-hidden">
+                <div className="relative h-full rounded-2xl border border-bg-border bg-bg-surface hover:bg-bg-raised transition-all duration-300 hover:-translate-y-2  hover:shadow-[0_15px_40px_rgba(139,92,246,0.15)]  group-hover:scale-110 p-5 overflow-hidden">
 
                   <div
                     className={`
