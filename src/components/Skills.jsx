@@ -111,7 +111,7 @@ export default function Skills() {
             </h3>
 
             <p className="text-ink-secondary mb-6">
-              Continuously continuously expanding my knowledge through projects and practice.
+              Continuously expanding my knowledge through projects and practice.
             </p>
 
             <div className="flex flex-wrap gap-3">
