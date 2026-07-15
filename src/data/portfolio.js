@@ -11,7 +11,7 @@ export const about = {
   heading: 'About',
   paragraphs: [
     "Hi, I'm Tanisha — an ECE-AI student, builder, and lifelong learner.", 
-    "I enjoy turning ideas into software, whether that's a news platform, a community-focused application, or an AI-powered tool. What excites me most about technology is its ability to solve real problems for real people, which is why I'm drawn to projects that have a clear purpose and impact.",
+    
     "My interests currently revolve around full-stack development, data structures & algorithms, and applied AI. Through personal projects, internships, and continuous learning, I'm building the skills needed to become a software engineer who can design, develop, and ship meaningful products.",
     "I'm always curious about new technologies, new challenges, and new opportunities to grow. ",
   ],
