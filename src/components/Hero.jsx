@@ -30,36 +30,6 @@ export default function Hero() {
               {profile.tagline}
             </p>
 
-            <div className="flex flex-wrap items-center gap-3 mb-14">
-              <a
-                href={profile.resumeUrl}
-                download
-                className="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white text-sm font-medium rounded-md px-5 py-2.5 transition-colors"
-              >
-                <FileText size={16} />
-                Resume
-              </a>
-
-              <a
-                href={profile.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-medium text-ink-primary border border-bg-border hover:border-bg-borderHover rounded-md px-5 py-2.5 transition-colors"
-              >
-                <Github size={16} />
-                GitHub
-              </a>
-
-              <a
-                href={profile.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-medium text-ink-primary border border-bg-border hover:border-bg-borderHover rounded-md px-5 py-2.5 transition-colors"
-              >
-                <Linkedin size={16} />
-                LinkedIn
-              </a>
-            </div>
           </div> 
 
           <div className="flex justify-center lg:justify-end">
