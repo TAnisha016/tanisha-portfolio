@@ -97,7 +97,7 @@ export const projects = [
       'Connects volunteers with NGOs for skill-based education. Matches volunteers to NGOs by location and availability, with secure registration via Firebase Auth.',
     stack: ['React', 'Firebase Auth', 'HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/TAnisha016/MySaathi',
-    demo: 'https://github.com/',
+    demo: 'https://my-saathi-rx24.vercel.app/',
   },
   {
     title: 'MySaathi',
