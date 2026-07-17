@@ -96,8 +96,8 @@ export const projects = [
     description:
       'Connects volunteers with NGOs for skill-based education. Matches volunteers to NGOs by location and availability, with secure registration via Firebase Auth.',
     stack: ['React', 'Firebase Auth', 'HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/TAnisha016/MySaathi',
-    demo: 'https://my-saathi-rx24.vercel.app/',
+    github: '',
+    demo: '',
   },
   {
     title: 'MySaathi',
@@ -105,8 +105,8 @@ export const projects = [
     description:
       'Converted Figma designs into a live, mobile-first React + TypeScript app within a hackathon timeframe, with accessible UI components on a scalable architecture.',
     stack: ['React 18', 'TypeScript', 'Figma', 'Vercel'],
-    github: 'https://github.com/',
-    demo: 'https://github.com/',
+    github: 'https://my-saathi-rx24.vercel.app/',
+    demo: 'https://my-saathi-rx24.vercel.app/',
   },
 ];
 
