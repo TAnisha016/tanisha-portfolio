@@ -96,8 +96,8 @@ export const projects = [
     description:
       'Connects volunteers with NGOs for skill-based education. Matches volunteers to NGOs by location and availability, with secure registration via Firebase Auth.',
     stack: ['React', 'Firebase Auth', 'HTML', 'CSS', 'JavaScript'],
-    github: '',
-    demo: '',
+    github: 'https://github.com/TAnisha016/TeachForGood',
+    demo: 'https://sohi07.github.io/TeachForGood/',
   },
   {
     title: 'MySaathi',
