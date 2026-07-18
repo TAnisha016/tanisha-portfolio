@@ -87,8 +87,8 @@ export const projects = [
     description:
       'A full-stack app that fetches and displays real-time news via NewsAPI, with category filters and pagination for fast browsing.',
     stack: ['React', 'Express.js', 'Node.js', 'NewsAPI', 'Axios'],
-    github: 'https://github.com/',
-    demo: 'https://github.com/',
+    github: 'https://github.com/TAnisha016/SnapNewz',
+    demo: 'https://snap-newz.vercel.app/',
   },
   {
     title: 'TeachForGood',
