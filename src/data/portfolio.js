@@ -105,7 +105,7 @@ export const projects = [
     description:
       'Converted Figma designs into a live, mobile-first React + TypeScript app within a hackathon timeframe, with accessible UI components on a scalable architecture.',
     stack: ['React 18', 'TypeScript', 'Figma', 'Vercel'],
-    github: 'https://my-saathi-rx24.vercel.app/',
+    github: 'https://github.com/TAnisha016/MySaathi',
     demo: 'https://my-saathi-rx24.vercel.app/',
   },
 ];
