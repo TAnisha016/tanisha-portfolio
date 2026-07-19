@@ -110,9 +110,7 @@ export default function Skills() {
              Explanding my skills continuously - Currently learning 
             </h3>
 
-            <p className="text-ink-secondary mb-6">
-              Continuously expanding my knowledge through projects and practice.
-            </p>
+            
 
             <div className="flex flex-wrap gap-3">
               {learning.map((item) => (
