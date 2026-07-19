@@ -78,7 +78,8 @@ export const learning = [
   "System Design",
   "Next.js",
   "TypeScript",
-  "LLMs"
+  "LLMs",
+  "AWS"
 ];
 
 export const projects = [
