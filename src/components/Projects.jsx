@@ -10,7 +10,7 @@ export default function Projects() {
         <Reveal>
           <SectionHeading
             eyebrow="03 · Projects"
-            title="Things I've built and building "
+            title="Things I've built"
             description="A mix of full-stack apps, hackathon work, and platforms built to solve a real problem for a real user."
           />
         </Reveal>
