@@ -4,7 +4,7 @@ export const profile = {
   name: 'Tanisha',
   role: 'Building Full-Stack Applications & learning Applied AI',
   tagline:
-    "Final-year B.Tech student focused on full-stack development, data structures & algorithms, and applied AI, with experience building modern web applications and LLM-driven projects."
+    "Final-year B.Tech student focused on full-stack development, data structures & algorithms, and AI, with experience building modern web applications and LLM-driven projects."
 };
 
 export const about = {
