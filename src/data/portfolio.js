@@ -96,7 +96,7 @@ export const projects = [
     title: 'TeachForGood',
     subtitle: 'Volunteer–NGO Matching Platform',
     description:
-      'Connects volunteers with NGOs for skill-based education. Matches volunteers to NGOs by location and availability, with secure registration via Firebase Auth.',
+      'Connects volunteers with NGOs for skill-based education. Matches volunteers to NGOs by location and availability, with secure registration via Firebase Authentication.',
     stack: ['React', 'Firebase Auth', 'HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/TAnisha016/TeachForGood',
     demo: 'https://sohi07.github.io/TeachForGood/',
