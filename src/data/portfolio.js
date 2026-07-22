@@ -10,7 +10,7 @@ export const profile = {
 export const about = {
   heading: 'About',
   paragraphs: [
-    "Hi, I'm Tanisha an ECE-AI student", 
+    "Hi, I'm Tanisha an ECE-AI student studying at IGDTUW", 
     
     "My interests currently revolve around full-stack development, data structures & algorithms, and applied AI. Through personal projects, internships, and continuous learning, I'm building the skills needed to become a software engineer who can design, develop, and ship meaningful products.",
     "I'm always curious about new technologies, new challenges, and new opportunities to grow. ",
