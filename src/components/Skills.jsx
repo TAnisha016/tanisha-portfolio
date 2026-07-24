@@ -107,7 +107,7 @@ export default function Skills() {
           <div className="mt-10 rounded-2xl border border-bg-border bg-bg-surface p-8">
 
             <h3 className="text-xl font-bold text-ink-primary mb-2">
-             Explanding my skills continuously - Currently learning 
+             Explanding my skills continuously : Currently learning 
             </h3>
 
             
