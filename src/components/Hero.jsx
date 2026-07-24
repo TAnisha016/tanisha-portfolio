@@ -63,7 +63,7 @@ export default function Hero() {
                 </p>
 
                 <p className="pl-4">
-                  <span className="text-[#80CBC4]">college</span>:{' '}
+                  <span className="text-[#80CBC4]">College</span>:{' '}
                   <span className="text-[#C3E88D]">"IGDTUW"</span>,
                 </p>
 
