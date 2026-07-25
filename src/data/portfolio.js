@@ -130,7 +130,7 @@ export const experience = [
 
 export const certifications = [
   {
-    title: 'The Web Developer Bootcamp 2024',
+    title: 'The Web Developer Bootcamp',
     issuer: 'Udemy',
     detail:
       '74-hour course covering HTML, CSS, JS, Node.js & React — building responsive UIs, dynamic forms, and server-side apps.',
