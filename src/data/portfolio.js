@@ -114,7 +114,7 @@ export const projects = [
 export const experience = [
   {
     type: 'experience',
-    title: 'Infosys Springboard Internship 6.0',
+    title: 'Infosys Springboard Internship',
     period: 'Aug 2025 – Oct 2025',
     description:
       'Contributing to "Open Deep Researcher" — an agentic LLM research framework — exploring applications of Generative AI for research automation, and supporting framework design under senior Data Scientists.',
