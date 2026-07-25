@@ -55,8 +55,7 @@ export const skillGroups = [
     color: "amber",
     skills: [
       "LangChain",
-      "Google Gemini",
-      "Prompt Engineering"
+      "Google Gemini"
     ]
   },
   {
