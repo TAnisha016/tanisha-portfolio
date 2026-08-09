@@ -1,136 +1,117 @@
-import { Github, Linkedin, ArrowDown, FileText } from 'lucide-react';
+import { ArrowUpRight, ArrowDown } from 'lucide-react';
 import { profile } from '../data/portfolio';
 
 export default function Hero() {
   return (
     <section
-      id="hero"
-      className="min-h-screen flex items-center pt-24 pb-16 px-6 relative"
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden px-6"
     >
-      <div className="absolute top-20 left-0 w-96 h-96 bg-purple-600/20 blur-[120px] rounded-full pointer-events-none" />
+      {/* Background glow */}
+      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-purple-600/10 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-fuchsia-500/10 blur-[140px] rounded-full pointer-events-none" />
-      <div className="max-w-7xl mx-auto w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center animate-fadeUp">
-          <div>
-            <div className="inline-flex items-center gap-2 font-mono text-xs text-accent bg-accent-dim border border-accent-border rounded-full px-3 py-1 mb-8">
-              <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-              Open to internship opportunities
-            </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-ink-primary tracking-tight leading-[1.1] mb-5">
-              {profile.name}
-            </h1>
+      {/* Subtle grid */}
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.08]"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(139,92,246,0.4) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(139,92,246,0.4) 1px, transparent 1px)
+          `,
+          backgroundSize: '50px 50px',
+        }}
+      />
 
-            <p className="font-mono text-sm sm:text-base text-accent mb-6">
-              {profile.role}
-            </p>
+      {/* Hero content */}
+      <div className="relative z-10 max-w-5xl mx-auto text-center animate-fadeUp">
 
-            <p className="text-ink-secondary text-base sm:text-lg leading-relaxed max-w-2xl mb-10">
-              {profile.tagline}
-            </p>
+        {/* Eyebrow */}
+        <p className="font-mono text-xs sm:text-xs tracking-[0.18em] uppercase text-ink-secondary mb-7">
+          ECE-AI Student
+          <span className="mx-2 text-accent">•</span>
+          Full-Stack Developer
+          <span className="mx-2 text-accent">•</span>
+          AI Enthusiast
+        </p>
 
-          </div> 
+        {/* Heading */}
+        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-4xl font-bold tracking-tight leading-[1.05] text-ink-primary mb-7">
+          Hi, I'm{' '}
+          <span className="text-accent">
+            {profile.name}
+          </span>
+          .
+        </h1>
 
-          <div className="flex justify-center lg:justify-end">
+        {/* Short tagline */}
+        <p className="text-xl sm:text-5xl md:text-3xl font-medium text-ink-secondary mb-6">
+          Building things, solving problems,
+          <br className="hidden sm:block" />
+          and exploring AI.
+        </p>
 
-            <div className="w-full max-w-xl rounded-lg border border-bg-border bg-bg-surface backdrop-blur-sm overflow-hidden font-mono shadow-[0_0_60px_rgba(139,92,246,0.15)]">
-              <div className="flex items-center justify-between px-4 py-2.5 border-b border-bg-border">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
-                </div>
-                <span className="text-[11px] text-ink-muted">about_me.js</span>
-              </div>
+        {/* Description */}
+        <p className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl leading-relaxed text-ink-muted mb-10">
+          Currently working on SnapNewz, a full-stack news platform which transforms traditional news feed into an AI-powered way to understand what's being reported.  
+        </p>
 
-              <div className="px-4 py-3 text-[12.5px] leading-relaxed">
-                <p>
-                  <span className="text-[#C792EA]">const</span>{' '}
-                  <span className="text-ink-primary">tanisha</span> = {'{'}
-                </p>
+        {/* CTA */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 
-                <p className="pl-4">
-                  <span className="text-[#80CBC4]">role</span>:{' '}
-                  <span className="text-[#C3E88D]">"ECE-AI Student"</span>,
-                </p>
+          <a
+            href="#projects"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById('projects')
+                ?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="
+              group inline-flex items-center gap-2
+              px-6 py-3
+              rounded-lg
+              bg-accent
+              text-white
+              font-medium
+              transition-all duration-300
+              hover:scale-[1.02]
+              hover:shadow-[0_0_30px_rgba(139,92,246,0.35)]
+            "
+          >
+            Explore My Projects
 
-                <p className="pl-4">
-                  <span className="text-[#80CBC4]">focus</span>: [
-                  <span className="text-[#C3E88D]">"Full-Stack Dev"</span>,{' '}
-                  <span className="text-[#C3E88D]">"DSA"</span>,{' '}
-                  <span className="text-[#C3E88D]">"AI"</span>],
-                </p>
+            <ArrowUpRight
+              size={18}
+              className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+            />
+          </a>
 
-                <p className="pl-4">
-                  <span className="text-[#80CBC4]">College</span>:{' '}
-                  <span className="text-[#C3E88D]">"IGDTUW"</span>,
-                </p>
-
-                <p className="pl-4">
-                  <span className="text-[#80CBC4]">gradYear</span>:{' '}
-                  <span className="text-[#F78C6C]">2027</span>,
-                </p>
-
-                <p className="pl-4">
-                  <span className="text-[#80CBC4]">languages</span>: [
-                  <span className="text-[#C3E88D]">"C++"</span>,{' '}
-                  <span className="text-[#C3E88D]">"JavaScript"</span>],
-                </p>
-
-                <p className="pl-4">
-                  <span className="text-[#80CBC4]">frameworks</span>: [
-                  <span className="text-[#C3E88D]">"React"</span>,{' '}
-                  <span className="text-[#C3E88D]">"Node.js"</span>
-                  <span className="text-[#C3E88D]">"Express.js"</span>],
-                </p>
-                 <p className="pl-4">
-                  <span className="text-[#80CBC4]">current</span>: [
-                  <span className="text-[#C3E88D]">"Building Projects & exploring AI"</span>],{' '}
-                </p>
-                <p className="pl-4">
-                  <span className="text-[#80CBC4]">goal</span>: [
-                  <span className="text-[#C3E88D]">"Solve real world problems with code"</span>],{' '}
-                </p>
-
-
-                <p>{'};'}</p>
-
-                <p className="mt-2">
-                  <span className="text-[#82AAFF]">console</span>.
-                  <span className="text-[#82AAFF]">log</span>(
-                  <span className="text-[#C3E88D]">
-                    "Always learning, always building."
-                  </span>
-                  );
-                </p>
-              </div>
-
-              <div className="flex items-center gap-2 px-4 py-2 border-t border-bg-border">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#27C93F] animate-pulse" />
-                <span className="text-[11px] text-ink-muted">
-                  Currently building the future
-                </span>
-              </div>
-            </div>
-          </div>
         </div>
-
-        <a
-          href="#about"
-          onClick={(e) => {
-            e.preventDefault();
-            document
-              .getElementById('about')
-              ?.scrollIntoView({ behavior: 'smooth' });
-          }}
-          className="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 text-ink-muted hover:text-ink-secondary transition-colors"
-          aria-label="Scroll to About section"
-        >
-          <ArrowDown size={18} />
-        </a>
       </div>
 
+      {/* Scroll indicator */}
+      <a
+        href="#about"
+        onClick={(e) => {
+          e.preventDefault();
+          document
+            .getElementById('about')
+            ?.scrollIntoView({ behavior: 'smooth' });
+        }}
+        className="
+          hidden sm:flex
+          absolute bottom-8 left-1/2 -translate-x-1/2
+          text-ink-muted
+          hover:text-accent
+          transition-colors
+          animate-bounce
+        "
+        aria-label="Scroll to About section"
+      >
+        <ArrowDown size={18} />
+      </a>
     </section>
   );
 }

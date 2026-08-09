@@ -5,11 +5,11 @@ export default function Footer() {
     <footer className="border-t border-bg-border py-8 px-6">
       <div className="max-w-content mx-auto flex flex-wrap items-center justify-between gap-4">
         <p className="font-mono text-xs text-ink-muted">
-          © {new Date().getFullYear()} {profile.name}. Built with React & Tailwind.
+          © {new Date().getFullYear()} {profile.name}. 
         </p>
         <div className="flex items-center gap-5">
           <a
-            href={profile.github}
+            href='https://github.com/TAnisha016'
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs text-ink-muted hover:text-ink-secondary transition-colors"
@@ -17,7 +17,7 @@ export default function Footer() {
             GitHub
           </a>
           <a
-            href={profile.linkedin}
+            href='https://www.linkedin.com/in/tanisha-9908a4282/'
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs text-ink-muted hover:text-ink-secondary transition-colors"
@@ -25,7 +25,7 @@ export default function Footer() {
             LinkedIn
           </a>
           <a
-            href={`mailto:${profile.email}`}
+            href='mailto:tanisha01603@gmail.com'
             className="text-xs text-ink-muted hover:text-ink-secondary transition-colors"
           >
             Email

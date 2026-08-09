@@ -5,10 +5,10 @@ import Reveal from './Reveal';
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="py-24 px-7">
       <div className="max-w-content mx-auto">
         <Reveal>
-          <SectionHeading eyebrow="01 · About" title={about.heading} />
+          <SectionHeading  size = "large" eyebrow="01 · About" title={about.heading} />
         </Reveal>
 
         <div className="grid md:grid-cols-3 gap-12">

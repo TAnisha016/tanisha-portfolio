@@ -1,5 +1,8 @@
-// Central content store — edit here to update site copy/links.
+// all the data is here,  edit here to update site copy/links.
 
+import snapnewzImage from '../assets/SN.png';
+import teachforgoodImage from '../assets/TFG.PNG';
+import mysaathiImage from '../assets/MS.PNG';
 export const profile = {
   name: 'Tanisha',
   role: 'Building Full-Stack Applications & learning  AI',
@@ -8,78 +11,17 @@ export const profile = {
 };
 
 export const about = {
-  heading: 'About',
+  heading: 'About Me ?',
   paragraphs: [
-    "Hi, I'm Tanisha an ECE-AI student studying at IGDTUW", 
+    "Helloo!, I'm Tanisha, Final Year B.Tech Student at IGDTUW", 
     
-    "My interests currently revolve around full-stack development, data structures & algorithms, and applied AI. Through personal projects, internships, and continuous learning, I'm building the skills needed to become a software engineer who can design, develop, and ship meaningful products.",
-    "I'm always curious about new technologies, new challenges, and new opportunities to grow. ",
+    "Currently exploring full-stack development, DSA, cloud, and AI ,from React and Node.js to AWS, LLMs, RAG, and APIs. I love learning by building, breaking things, and figuring out how to make them work better.",
+
+    "Outside tech, I'm all about people, events, debates, and books. I've been organizing my college's annual cultural fest for three years, debating through school and college, and reading whenever I can. My bookshelf has no particular genre loyalty so political non-fiction and fiction happily coexist ",
   ],
 };
 
-export const skillGroups = [
-  {
-    title: "Programming",
-    icon: "code",
-    description: "Core programming languages I use to solve problems and build software.",
-    color: "purple",
-    skills: ["C++", "JavaScript"]
-  },
-  {
-    title: "Frontend",
-    icon: "monitor",
-    description: "Building responsive and interactive user interfaces.",
-    color: "blue",
-    skills: [
-      "React",
-      "HTML5",
-      "CSS3",
-      "Bootstrap",
-      "Tailwind CSS"
-    ]
-  },
-  {
-    title: "Backend",
-    icon: "server",
-    description: "Developing APIs and server-side applications.",
-    color: "green",
-    skills: [
-      "Node.js",
-      "Express.js"
-    ]
-  },
-  {
-    title: "AI & Tools",
-    icon: "brain",
-    description: "Exploring modern AI technologies and developer tools.",
-    color: "amber",
-    skills: [
-      "LangChain",
-      "Google Gemini"
-    ]
-  },
-  {
-    title: "Developer Tools",
-    icon: "git",
-    description: "Tools I use throughout the development workflow.",
-    color: "pink",
-    skills: [
-      "Git",
-      "GitHub",
-      "VS Code",
-      "Postman"
-    ]
-  }
-];
 
-export const learning = [
-  "Data Structures & Algorithms",
-  "System Design",
-  "Next.js",
-  "TypeScript",
-  "LLMs",
-  "AWS"
-];
 
 export const projects = [
   {
@@ -88,6 +30,7 @@ export const projects = [
     description:
       'A full-stack app that fetches and displays real-time news via NewsAPI, with category filters, infinite scroll and Sentiment Analysis of the News.',
     stack: ['React', 'Express.js', 'Node.js', 'NewsAPI', 'Axios'],
+    image: snapnewzImage,
     github: 'https://github.com/TAnisha016/SnapNewz',
     demo: 'https://snap-newz.vercel.app/',
   },
@@ -97,6 +40,7 @@ export const projects = [
     description:
       'Connects volunteers with NGOs for skill-based education. Matches volunteers to NGOs by location and availability, with secure registration via Firebase Authentication.',
     stack: ['React', 'Firebase Auth', 'HTML', 'CSS', 'JavaScript'],
+    image: teachforgoodImage,
     github: 'https://github.com/TAnisha016/TeachForGood',
     demo: 'https://sohi07.github.io/TeachForGood/',
   },
@@ -106,6 +50,7 @@ export const projects = [
     description:
       'Converted Figma designs into a live, mobile-first React + TypeScript app within a hackathon timeframe, with accessible UI components on a scalable architecture.',
     stack: ['React 18', 'TypeScript', 'Figma', 'Vercel'],
+    image : mysaathiImage,
     github: 'https://github.com/TAnisha016/MySaathi',
     demo: 'https://my-saathi-rx24.vercel.app/',
   },

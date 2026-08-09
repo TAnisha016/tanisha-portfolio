@@ -6,7 +6,13 @@ export default function ProjectCard({ project }) {
       {/* Placeholder visual: initials on a quiet gradient, no stock imagery */}
       <div className="h-36 flex items-center justify-center bg-gradient-to-br from-bg-raised to-bg-surface border-b border-bg-border">
         <span className="font-mono text-3xl text-ink-muted/40 tracking-tight">
-          {project.title.slice(0, 2).toUpperCase()}
+          <div className="h-44 overflow-hidden border-b border-bg-border">
+            <img
+            src={project.image}
+            alt={`${project.title} project preview`}
+            className="w-full h-full object-cover"
+            />
+          </div>
         </span>
       </div>
 
