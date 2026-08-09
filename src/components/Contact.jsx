@@ -24,60 +24,94 @@ const CHANNELS = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-7">
-      <div className="max-w-content mx-auto">
+    <section id="contact" className="py-28 px-7">
+      <div className="max-w-4xl mx-auto text-center">
 
-        <p className="font-mono text-xs text-accent mb-3 tracking-wide">
-          05 · Contact
-        </p>
+        <Reveal>
+          {/* Eyebrow */}
+          <p className="font-mono text-xs text-accent mb-4 tracking-wide">
+            05 · Contact
+          </p>
 
-        <h2 className="text-4xl font-bold text-ink-primary tracking-tight mb-3">
-          Let's work together
-        </h2>
+          {/* Main heading */}
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-ink-primary tracking-tight leading-tight mb-6">
+            Let's build something
+            <br />
+            <span className="text-accent">meaningful together.</span>
+          </h2>
 
-        <p className="text-ink-secondary text-sm sm:text-base font-semibold max-w-xl mb-12">
-          I'm actively looking for internship opportunities in frontend or
-          full-stack development. Reach out — I usually reply within a day.
-        </p>
+          {/* Description */}
+          <p className="text-ink-secondary text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+            Looking for the next place to learn, build, and make an impact.
+            I'm excited to bring my curiosity, problem-solving skills, and
+            love for building to a great team.
+          </p>
 
-        <div className="grid sm:grid-cols-3 gap-4">
-          {CHANNELS.map((channel, i) => (
-            <Reveal key={channel.label} delay={i * 80}>
-              <a
-                href={channel.href}
-                target={channel.label === 'Email' ? undefined : '_blank'}
-                rel={
-                  channel.label === 'Email'
-                    ? undefined
-                    : 'noopener noreferrer'
-                }
-                className="group flex flex-col justify-between rounded-lg border border-bg-border bg-bg-surface hover:border-accent-border hover:bg-bg-raised transition-colors p-5 h-full"
-              >
-                <div className="flex items-center justify-between mb-4">
+          {/* Contact links */}
+          <div className="flex flex-wrap justify-center gap-3">
+            {CHANNELS.map((channel, i) => (
+              <Reveal key={channel.label} delay={i * 80}>
+                <a
+                  href={channel.href}
+                  target={channel.label === 'Email' ? undefined : '_blank'}
+                  rel={
+                    channel.label === 'Email'
+                      ? undefined
+                      : 'noopener noreferrer'
+                  }
+                  className="
+                    group
+                    inline-flex items-center gap-3
+                    rounded-lg
+                    border border-bg-border
+                    bg-bg-surface
+                    px-5 py-3
+                    transition-all duration-300
+                    hover:border-accent-border
+                    hover:bg-bg-raised
+                  "
+                >
                   <channel.icon
-                    size={18}
-                    className="text-ink-muted group-hover:text-accent transition-colors"
+                    size={17}
+                    className="
+                      text-ink-muted
+                      group-hover:text-accent
+                      transition-colors
+                    "
                   />
+
+                  <div className="text-left">
+                    <p className="font-mono text-[10px] uppercase tracking-wide text-ink-muted">
+                      {channel.label}
+                    </p>
+
+                    <p className="text-ink-primary text-sm font-medium">
+                      {channel.value}
+                    </p>
+                  </div>
 
                   <ArrowUpRight
                     size={15}
-                    className="text-ink-muted opacity-0 group-hover:opacity-100 group-hover:text-accent transition-all"
+                    className="
+                      text-ink-muted
+                      group-hover:text-accent
+                      group-hover:translate-x-0.5
+                      group-hover:-translate-y-0.5
+                      transition-all
+                    "
                   />
-                </div>
+                </a>
+              </Reveal>
+            ))}
+          </div>
 
-                <div>
-                  <p className="font-mono text-[11px] uppercase tracking-wide text-ink-muted mb-1">
-                    {channel.label}
-                  </p>
+          {/* Closing line */}
+          <p className="mt-12 font-mono text-xs text-ink-muted">
+            Have an idea, opportunity, or just want to say hello?
+            <span className="text-accent ml-1">I'd love to hear from you.</span>
+          </p>
 
-                  <p className="text-ink-primary text-sm font-medium break-all">
-                    {channel.value}
-                  </p>
-                </div>
-              </a>
-            </Reveal>
-          ))}
-        </div>
+        </Reveal>
 
       </div>
     </section>
