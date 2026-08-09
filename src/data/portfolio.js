@@ -62,11 +62,11 @@ export const experience = [
     title: 'Infosys Springboard Internship',
     period: 'Aug 2025 – Oct 2025',
     description:
-      'Contributing to "Open Deep Researcher" — an agentic LLM research framework — exploring applications of Generative AI for research automation, and supporting framework design under senior Data Scientists.',
+      'Contributed to "Open Deep Researcher", an agentic LLM research framework. Exploring applications of Generative AI for research automation, and supporting framework design under senior Data Scientists.',
   },
   {
     type: 'program',
-    title: 'Pragati: Path to Future — Cohort 2',
+    title: 'Pragati: Path to Future',
     period: '12-week program',
     description:
       'Selected participant focused on Digital Dexterity, Python, Generative AI, and professional development. Built foundational skills in Python, GenAI, and DSA alongside leadership and career readiness.',
