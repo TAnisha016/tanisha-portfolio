@@ -8,7 +8,7 @@ export default function SectionHeading({
 }) {
   const headingSize =
     size === "large"
-      ? "text-4xl sm:text-5xl"
+      ? "text-4xl sm:text-4xl"
       : "text-2xl sm:text-2xl";
 
   return (

@@ -9,6 +9,7 @@ export default function Experience() {
       <div className="max-w-content mx-auto">
         <Reveal>
           <SectionHeading
+            size = "large" 
             eyebrow="04 · Experience"
             title="Experience & achievements"
             description="Internships, programs, and recognitions alongside coursework."
