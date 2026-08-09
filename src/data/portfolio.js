@@ -78,7 +78,7 @@ export const certifications = [
     title: 'The Web Developer Bootcamp',
     issuer: 'Udemy',
     detail:
-      '74-hour course covering HTML, CSS, JS, Node.js & React — building responsive UIs, dynamic forms, and server-side apps.',
+      '74-hour course covering HTML, CSS, JS, Node.js & React and building responsive UIs, dynamic forms, & server-side apps.',
   },
   {
     title: 'Artificial Intelligence Certification',
@@ -92,7 +92,7 @@ export const certifications = [
 
 export const achievements = [
   {
-    title: 'Top 4,000 — AlgoUniversity Tech Fellowship',
+    title: 'Top 4,000 : AlgoUniversity Tech Fellowship',
     detail:
       'Ranked among the top 4,000 of 20,000 participants in Round 1, which included solving DSA problems under timed conditions.',
   },
@@ -101,7 +101,7 @@ export const achievements = [
 export const leadership = [
   {
     role: 'Head Coordinator',
-    org: 'Taarangana — Cultural Society, IGDTUW',
+    org: 'Taarangana : The Cultural Society of IGDTUW',
   },
   {
     role: 'Executive Member',
@@ -110,7 +110,7 @@ export const leadership = [
 ];
 
 export const education = {
-  degree: 'B.Tech — Electronics & Communication Engineering (AI)',
+  degree: 'B.Tech - Electronics & Communication Engineering (AI)',
   school: 'Indira Gandhi Delhi Technical University for Women',
   period: '2023 – 2027',
 };
