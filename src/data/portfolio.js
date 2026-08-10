@@ -1,6 +1,6 @@
 // all the data is here,  edit here to update site copy/links.
 
-import snapnewzImage from '../assets/SN.png';
+import snapnewzImage from '../assets/SN.PNG';
 import teachforgoodImage from '../assets/TFG.PNG';
 import mysaathiImage from '../assets/MS.PNG';
 export const profile = {

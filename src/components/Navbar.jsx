@@ -57,7 +57,8 @@ export default function Navbar() {
         </ul>
 
         <a
-          href={profile.resumeUrl}
+          href="/Tanisha_Resume.pdf"
+
           download
           className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-ink-primary border border-bg-border hover:border-bg-borderHover rounded-md px-3.5 py-1.5 transition-colors"
         >
