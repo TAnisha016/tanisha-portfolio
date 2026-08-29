@@ -31,10 +31,9 @@ export default function Navbar() {
         scrolled ? 'bg-bg/80 backdrop-blur-md border-b border-bg-border' : 'bg-transparent'
       }`}
     >
-      <nav className="max-w-content mx-auto px-6 h-16 flex items-center justify-between">
-        
+<nav className="max-w-content mx-auto px-6 h-16 grid grid-cols-3 items-center">        
 
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center justify-center gap-8 col-start-2">
           {LINKS.map((link) => (
             <li key={link.id}>
               <button
@@ -48,11 +47,10 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="/Tanisha_Resume.pdf"
-
-          download
-          className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-ink-primary border border-bg-border hover:border-bg-borderHover rounded-md px-3.5 py-1.5 transition-colors"
-        >
+  href={profile.resumeUrl}
+  download
+  className="hidden md:inline-flex items-center justify-self-end gap-2 text-sm font-medium text-ink-primary border border-bg-border hover:border-bg-borderHover rounded-md px-3.5 py-1.5 transition-colors"
+>
           <FileText size={14} />
           Resume
         </a>
