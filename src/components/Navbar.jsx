@@ -27,10 +27,12 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
-        scrolled ? 'bg-bg/80 backdrop-blur-md border-b border-bg-border' : 'bg-transparent'
-      }`}
-    >
+  className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
+    scrolled || open
+      ? 'bg-bg border-b border-bg-border'
+      : 'bg-transparent'
+  }`}
+>
 <nav className="max-w-content mx-auto px-6 h-16 grid grid-cols-3 items-center">        
 
         <ul className="hidden md:flex items-center justify-center gap-8 col-start-2">
@@ -65,8 +67,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-<div className="fixed inset-0 top-16 z-40 md:hidden bg-[#0d0618] border-t border-bg-border px-6 py-8">
-      <div className="flex flex-col gap-6">
+<div className="fixed inset-0 top-16 z-40 md:hidden bg-bg border-t border-bg-border px-6 py-8">    <div className="flex flex-col gap-6">
       {LINKS.map((link) => (
         <button
           key={link.id}
