@@ -65,26 +65,31 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="md:hidden bg-bg-surface border-t border-bg-border px-6 py-4 flex flex-col gap-4">
-          {LINKS.map((link) => (
-            <button
-              key={link.id}
-              onClick={() => handleLinkClick(link.id)}
-              className="text-left text-sm text-ink-secondary hover:text-ink-primary transition-colors"
-            >
-              {link.label}
-            </button>
-          ))}
-          <a
-            href={profile.resumeUrl}
-            download
-            className="inline-flex items-center gap-2 text-sm font-medium text-ink-primary border border-bg-border rounded-md px-3.5 py-2 w-fit"
-          >
-            <FileText size={14} />
-            Resume
-          </a>
-        </div>
-      )}
+<div className="fixed inset-0 top-16 z-40 md:hidden bg-[#0d0618] border-t border-bg-border px-6 py-8">
+      <div className="flex flex-col gap-6">
+      {LINKS.map((link) => (
+        <button
+          key={link.id}
+          onClick={() => handleLinkClick(link.id)}
+          className="text-left text-base text-ink-secondary hover:text-ink-primary transition-colors"
+        >
+          {link.label}
+        </button>
+      ))}
+
+      <div className="border-t border-bg-border pt-6 mt-2">
+        <a
+          href={profile.resumeUrl}
+          download
+          className="inline-flex items-center gap-2 text-sm font-medium text-ink-primary border border-bg-border hover:border-bg-borderHover rounded-md px-4 py-2.5"
+        >
+          <FileText size={15} />
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+)}
     </header>
   );
 }
