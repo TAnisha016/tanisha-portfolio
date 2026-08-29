@@ -32,16 +32,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-content mx-auto px-6 h-16 flex items-center justify-between">
-        <a
-          href="#hero"
-          onClick={(e) => {
-            e.preventDefault();
-            handleLinkClick('hero');
-          }}
-          className="font-mono text-sm text-ink-primary tracking-tight"
-        >
-          tanisha<span className="text-accent">.</span>dev
-        </a>
+        
 
         <ul className="hidden md:flex items-center gap-8">
           {LINKS.map((link) => (
