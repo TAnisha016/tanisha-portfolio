@@ -19,8 +19,8 @@ export default {
         },
 
         accent: {
-          DEFAULT: '#F97316',
-          hover: '#FB923C',
+          DEFAULT: '#FF8A3D',
+          hover: '#FFA45F',
           dim: 'rgba(249, 115, 22, 0.12)',
           border: 'rgba(249, 115, 22, 0.35)',
         },
@@ -50,10 +50,23 @@ export default {
             transform: 'translateY(0)',
           },
         },
+
+        gridFlow: {
+          '0%, 100%': {
+            transform: 'scale(0.35)',
+            opacity: '0.25',
+          },
+
+          '50%': {
+            transform: 'scale(1)',
+            opacity: '0.65',
+          },
+        },
       },
 
       animation: {
         fadeUp: 'fadeUp 0.6s ease-out forwards',
+        gridFlow: 'gridFlow 8s ease-in-out infinite',
       },
     },
   },
