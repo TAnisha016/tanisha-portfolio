@@ -154,7 +154,7 @@ export default function Hero() {
           Math.PI * 2
         );
 
-        ctx.fillStyle = `rgba(249, 115, 22, ${alpha})`;
+        ctx.fillStyle = `rgba(255, 138, 61, ${alpha})`;
         ctx.fill();
       });
 
